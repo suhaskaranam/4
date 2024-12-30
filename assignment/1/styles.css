@@ -1,0 +1,58 @@
+/* Task A: Apply general styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Task B: Combinator selectors */
+/* Target all anchor tags */
+header a, main a, footer a {
+    color: red;
+}
+
+/* Target first h2 tag */
+main > h2:first-child {
+    color: blue;
+    background-color: #f0f0f0;
+}
+
+/* Target first p tag */
+main > p:first-child {
+    color: red;
+}
+
+/* Task C: Attribute selectors */
+/* Target anchor tag with href attribute */
+a {
+    color: red;
+    text-decoration: none;
+}
+
+/* Target anchor tag with class "active" */
+a.active {
+    color: green;
+    text-decoration: underline;
+}
+
+/* Target anchor tag with target="_self" */
+a {
+    background-color: #ccc;
+}
+
+/* Task D: Pseudo-selectors */
+/* Target last p tag */
+main > p:last-child::after {
+    content: "...";
+}
+
+/* Target list bullet points */
+ul li::marker {
+    color: blue;
+}
+
+/* Target 2nd p tag's first letter */
+main > p:nth-child(2)::first-letter {
+    color: red;
+    font-size: 30px;
+}

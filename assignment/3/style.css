@@ -1,0 +1,19 @@
+/* Add text before #header */
+#header::before {
+    content: "Start of Header - ";
+}
+
+/* Add text after #header */
+#header::after {
+    content: " - End of Header";
+}
+
+/* Add text before #paragraph */
+#paragraph::before {
+    content: "Paragraph Introduction: ";
+}
+
+/* Add text after #paragraph */
+#paragraph::after {
+    content: " - End of Paragraph";
+}
